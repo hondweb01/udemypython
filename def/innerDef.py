@@ -22,8 +22,8 @@ def make_multiplier(factor):#factorがクロージャ(multiplyから参照して
     def multiply(x):
         return x * factor
     return multiply
-times3=make_multiplier(3) #multiply(x) return x*3　
-print(times3(10)) #xに10が入る
+times3=make_multiplier(3) #multiply(x) return x*3　multiplyの引数xに値が代入される
+print(times3(10)) #multiplyの引数xに値が代入される
 
 '''
 nonlocal
